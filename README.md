@@ -1,22 +1,40 @@
-# DSA-JAVA
-Day-wise Data Structures and Algorithms practice using Java. Includes problem solutions, approaches, and daily learnings.
-# DSA Practice in Java 🚀
+# DSA-JAVA 🚀
 
-This repository contains my **day-wise practice of Data Structures and Algorithms using Java**.  
-Each day includes problem solutions with clear logic, optimized approaches, and learning notes.
+Day-wise **Data Structures and Algorithms practice using Java**.  
+This repository documents my daily DSA journey with clean solutions, clear approaches, and consistent progress.
 
 ---
 
 ## 📅 Day-wise Progress
 
 ### ✅ Day 01 – Arrays, Math & Bit Manipulation
-Problems solved:
+**Problems Solved:**
 - Best Time to Buy and Sell Stock
 - Majority Element
 - Pow(x, n)
 - Repeat and Missing Number
 - Single Number
 - Merge Sorted Array
+
+**Concepts Covered:**
+- Arrays
+- Math
+- Bit Manipulation
+
+---
+
+### ✅ Day 02 – Arrays & Two Pointers
+**Problems Solved:**
+- Sort Colors
+- Maximum Subarray
+- Search a 2D Matrix
+- 3Sum
+
+**Concepts Covered:**
+- Two Pointers
+- Kadane’s Algorithm
+- Matrix Traversal
+- Sorting & Duplicate Handling
 
 ---
 
@@ -32,6 +50,11 @@ DSA-JAVA/
 │   ├── RepeatAndMissingNumber.java
 │   ├── SingleNumber.java
 │   ├── MergeSortedArray.java
-│   └── README.md
+│
+├── DAY-2/
+│   ├── SortColors.java
+│   ├── MaximumSubarray.java
+│   ├── Search2DMatrix.java
+│   ├── ThreeSum.java
 │
 └── README.md
