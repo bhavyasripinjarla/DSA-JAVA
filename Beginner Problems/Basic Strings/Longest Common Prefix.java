@@ -11,7 +11,6 @@ class Solution {
         if(str.length==0) return "";
         if(str.length==1) return str[0];
         //your code goes here
-        int n=str.length;
         String res="";
         for(int i=0;i<str[0].length();i++){
             res=res+str[0].charAt(i);
