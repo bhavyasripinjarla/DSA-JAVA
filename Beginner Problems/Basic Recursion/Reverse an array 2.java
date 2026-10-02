@@ -13,6 +13,6 @@ class Solution {
         //your code goes here
         int l=0,r=nums.length-1;
         helper(nums,l,r);
-;        return nums;
+        return nums;
     }
 }
