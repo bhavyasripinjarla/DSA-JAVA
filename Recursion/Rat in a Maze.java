@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 class Solution {
     public void helper(int i,int j,String s,int[][] vis,int[][] maze,int n,ArrayList<String> ans,int[] di,int[] dj){
         if(i==n-1 && j==n-1){
@@ -19,9 +19,8 @@ class Solution {
     }
     public ArrayList<String> ratInMaze(int[][] maze) {
         // code here
-        ArrayList<String> ans=new ArrayList<String>();
+        ArrayList<String> ans=new ArrayList<>();
         int n=maze.length;
-        int m=maze[0].length;
         int[][] vis=new int[n][n];
         if (maze[0][0] == 0 || maze[n - 1][n - 1] == 0) {
             return ans;

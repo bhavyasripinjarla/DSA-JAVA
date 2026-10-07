@@ -16,7 +16,6 @@ class Solution {
     }
 
     public boolean ispalindrome(String s, int i,int j){
-        int n=s.length();
         while(i<=j){
             if(s.charAt(i)!=s.charAt(j)){
                 return false;
@@ -27,7 +26,7 @@ class Solution {
     }
     public List<List<String>> partition(String s) {
 
-        List<List<String>> ans=new ArrayList<List<String>>();
+        List<List<String>> ans=new ArrayList<>();
         partioning(ans,new ArrayList<>(),s,0);
         return ans;
     }
