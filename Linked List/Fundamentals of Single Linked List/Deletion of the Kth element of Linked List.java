@@ -12,7 +12,6 @@ class ListNode{
     public int data;
     public ListNode next;
 }
-@SuppressWarnings("unused")
 class Solution {
     public ListNode deleteKthNode(ListNode head, int k) {
         // Your code goes here
