@@ -8,7 +8,12 @@ class ListNode{
     ListNode(int x, ListNode next) { data = x; this.next = next; }
 }
 */
-
+class ListNode{
+    public int data;
+    public ListNode next;
+    ListNode() { data = 0; next = null; }
+    ListNode(int x) { data = x; next = null; }
+}
 class Solution {
     public ListNode insertAtKthPosition(ListNode head, int X, int K) {
         //YOUR CODE GOES HERE
