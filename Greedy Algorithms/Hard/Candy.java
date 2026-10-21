@@ -1,27 +1,34 @@
-class Solution {
+@SuppressWarnings("unused")
+public class Candy {
     public int candy(int[] ratings) {
-        int n=ratings.length;
-        int[] left=new int[n];
-        left[0]=1;
-        for(int i=1;i<n;i++){
-            if(ratings[i]>ratings[i-1]){
-                left[i]=left[i-1]+1;
-            }else{
-                left[i]=1;
+        if (ratings == null || ratings.length == 0) {
+            return 0;
+        }
+
+        int n = ratings.length;
+        int[] left = new int[n];
+        left[0] = 1;
+
+        for (int i = 1; i < n; i++) {
+            if (ratings[i] > ratings[i - 1]) {
+                left[i] = left[i - 1] + 1;
+            } else {
+                left[i] = 1;
             }
         }
-        int right=1,c=1,max=Math.max(1,left[n-1]);
-        for(int i=n-2;i>=0;i--){
-            if(ratings[i]>ratings[i+1]){
-                c=right+1;
-                right=c;
-            }else{
-                c=1;
-                right=1;
+
+        int right = 1;
+        int max = Math.max(1, left[n - 1]);
+
+        for (int i = n - 2; i >= 0; i--) {
+            if (ratings[i] > ratings[i + 1]) {
+                right++;
+            } else {
+                right = 1;
             }
-            max=max+Math.max(left[i],c);
+            max += Math.max(left[i], right);
         }
+
         return max;
     }
-
 }
